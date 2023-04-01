@@ -49,27 +49,62 @@ header {
     display: flex;
 }
 
-.main-nav ul {
+.main-nav > ul {
     display: flex;
+    align-items: center;
+}
+
+.main-nav ul {
     margin: 0;
     padding: 0;
-    align-items: center;
     font-size: 13.9px;
     list-style: none;
 }
 
 .main-nav ul li {
     padding: 9.6px;
+    position: relative;
 }
 
-.main-nav ul li a{
+.main-nav ul li a {
     text-decoration: none;
     color: #999999;
 }
 
-.main-nav ul li:hover{
+.main-nav .submenu {
+    display: none;
+    position: absolute;
+    left: -2px;
+    top: 100%;
+    border-left: #3692e7 solid 2px;
+    box-shadow: 2px 5px 6px rgb(0 0 0 / 30%);
+    border-radius: 0 3px 3px 3px;
+    width: 9rem;
+    background: #4d4d4d;
+}
+
+.main-nav > ul > li:hover {
     background: #4d4d4d;
     border-left: #3692e7 solid 2px;
 }
+
+.main-nav > ul > li:hover > a{
+    color: white;
+}
+
+.main-nav ul li:hover .submenu {
+    display: block;
+}
+
+.submenu li:hover {
+    background-color: #3692e7;
+}
+
+.submenu li:hover a{
+    color: white;
+}
+  
+
+
 
 /* Cuerpo de la pagina */

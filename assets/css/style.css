@@ -13,6 +13,8 @@ body {
 
 /* Barra de navegacion */
 header {
+    display: flex;
+    justify-content: space-between;
     height: 60px;
 }
 
@@ -42,7 +44,7 @@ header {
 
 .title:hover a,
 .title:hover span {
-  color: #2e7cc4;
+  color: #3692e7;
 }
 
 .main-nav {
@@ -102,6 +104,34 @@ header {
 
 .submenu li:hover a{
     color: white;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #3692e7;
+    margin: 0 1rem;
+    padding: 0.8em 1em;
+}
+
+.nav-right a:hover {
+    border-radius: 3px;
+    background: #4d4d4d66;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 23%);;
+}
+
+svg {
+    padding: 0 0.7rem;
+}
+
+svg:hover {
+    stroke: white;
 }
   
 

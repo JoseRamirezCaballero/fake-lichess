@@ -8,7 +8,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: #161512 linear-gradient(to bottom, hsl(37, 12%, 16%), hsl(37, 10%, 8%) 100%) repeat-x;
+    background: #161512 linear-gradient(to bottom, hsl(37, 12%, 16%), hsl(37, 10%, 8%) 116px) repeat-x;
+    height: 100vh;
 }
 
 /* Barra de navegacion */
@@ -133,8 +134,105 @@ svg {
 svg:hover {
     stroke: white;
 }
-  
-
-
 
 /* Cuerpo de la pagina */
+.main-content {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-items: center;
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.lives {
+    display: flex;
+    flex-direction: column;
+    font-size: .9em;
+}
+
+.lives a {
+    text-decoration: none;
+    color: #999;
+    font-family: 'Noto Sans', sans-serif;
+    margin: .5em 1em .5em 0;
+}
+
+.lives strong {
+    font-family: 'Roboto', sans-serif;
+    color: #bf811d;
+}
+
+.lives-info {
+    display: flex;
+    align-items: center;
+}
+
+.lives-info strong {
+    margin-right: 0.5vw;
+}
+
+.lives a:last-child {
+    text-align: right;
+}
+
+.lives a:last-child:hover {
+    color: #3692e7;
+}
+
+.spotlights {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    align-items: center;
+}
+
+.spotlights > a > span {
+    display: flex;
+    flex-direction: column;
+}
+
+.spotlights a {
+    height: 55px;
+    display: flex;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    color: #BABABA;
+    padding: .3em;
+    opacity: .8;
+    align-items: center;
+    background: linear-gradient(to bottom, hsl(37, 7%, 22%), hsl(37, 5%, 19%) 100%);
+}
+
+.spotlights a:hover {
+    background: linear-gradient(to bottom, hsl(37, 7%, 22%), hsl(37, 5%, 19%) 100%);
+    opacity: 0.9;
+}
+
+.spotlights a:hover svg {
+    color: white;
+}
+
+.spotlights a:hover span {
+    color: #3692e7;
+}
+
+.about {
+    color: #BABABA;
+    font-family: "Noto Sans",Sans-Serif;
+    font-size: 14px;
+    margin-top: 2vmin;
+}
+
+.about a {
+    text-decoration: none;
+    color: #3692e7;
+}
+
+.about a:hover {
+    color: #57aeff;
+}

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Orbitron&family=Rampart+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Orbitron&family=Rampart+One&family=Roboto&display=swap');
 
-/* font-family: 'Noto Sans', sans-serif; */
-/* font-family: 'Roboto', sans-serif; */
-
 /* Estilos generales */
 body {
     margin: 0;
@@ -142,6 +139,7 @@ svg:hover {
     justify-items: center;
 }
 
+/* PARTE IZQUIERDA */
 .main-left {
     display: flex;
     flex-direction: column;
@@ -236,3 +234,39 @@ svg:hover {
 .about a:hover {
     color: #57aeff;
 }
+
+/* PARTE CENTRAL */
+.main-center {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pestañas {
+    display: flex;
+    justify-content: space-around;
+    user-select: none;
+    cursor: pointer;
+    color: #999999;
+}
+
+.pestañas span {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0.2em;
+    font-size: 14px;
+    border-bottom: 2px solid #404040;
+}
+
+.pestañas span:nth-child(1) {
+    color: #d64f00;
+    border-bottom: 2px solid #d64f00;
+}
+
+.pestañas span:nth-child(2):hover,
+.pestañas span:nth-child(3):hover {
+    border-bottom: 2px solid #d64f00;
+}
+
+/* PARTE DERECHA */

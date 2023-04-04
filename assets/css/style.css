@@ -13,7 +13,9 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .title-nav {
@@ -26,9 +28,9 @@ header {
 .title {
     margin: 0 1rem 0 1.5rem;
     font-family: 'Noto Sans', sans-serif;
+    font-weight: 200;
     font-size: 30px;
-    font-weight: 100;
-    line-height: 55px;
+    line-height: 37px;
 }
 
 .title a {
@@ -144,7 +146,9 @@ svg:hover {
 /* Cuerpo de la pagina */
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2vmin;
     justify-items: center;
 }
 
@@ -152,7 +156,7 @@ svg:hover {
 .main-left {
     display: flex;
     flex-direction: column;
-    padding: 2vw;
+    padding: 2vw 0 0 2vw;
 }
 
 .lives {
@@ -279,7 +283,7 @@ svg:hover {
 
 .lobby-content {
     width: 97.5%;
-    height: 100%;
+    height: 550px;
     background: #262421 url("data:image/svg+xml,%3Csvg viewBox='-2 -2 54 54' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23383633' stroke='%23383633' stroke-linejoin='round'%0Ad='M38.956.5c-3.53.418-6.452.902-9.286 2.984C5.534 1.786-.692 18.533.68 29.364 3.493 50.214 31.918 55.785 41.329 41.7c-7.444 7.696-19.276 8.752-28.323 3.084C3.959 39.116-.506 27.392 4.683 17.567 9.873 7.742 18.996 4.535 29.03 6.405c2.43-1.418 5.225-3.22 7.655-3.187l-1.694 4.86 12.752 21.37c-.439 5.654-5.459 6.112-5.459 6.112-.574-1.47-1.634-2.942-4.842-6.036-3.207-3.094-17.465-10.177-15.788-16.207-2.001 6.967 10.311 14.152 14.04 17.663 3.73 3.51 5.426 6.04 5.795 6.756 0 0 9.392-2.504 7.838-8.927L37.4 7.171z'/%3E%3C/svg%3E%0A");
     background-size: 100% 100%;
     overflow-x: hidden;
@@ -306,6 +310,7 @@ svg:hover {
 }
 
 .lobby div:nth-child(1) {
+    font-size: 40px;
     letter-spacing: .1em;
 }
 
@@ -314,39 +319,45 @@ svg:hover {
     opacity: 1;
 }
 
+.lobby.custom div {
+    font-size: large;
+}
+
 /* PARTE DERECHA */
 .main-right {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 2em 0 0 0;
     gap: 0.5em;
+    position: relative;
 }
 
 .opciones-partida {
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 .opciones-partida button {
     color: #999;
     cursor: pointer;
+    width: 90%;
     height: 50px;
     margin: 1.2em;
     text-align: center;
     border-radius: 3px;
     border: none;
     font-family: "Roboto",Sans-Serif;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 1em;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 23%);
     background: linear-gradient(to bottom, hsl(37, 7%, 22%), hsl(37, 5%, 19%) 100%);
-    opacity: 0.8;
 }
 
 .opciones-partida button:hover {
-    opacity: 0.9;
+    opacity: 0.95;
     color: white;
 }
 
@@ -354,6 +365,8 @@ svg:hover {
     display: flex;
     flex-direction: column;
     margin: 1.2em;
+    position: absolute;
+    top: 90%;
 }
 
 .contadores a {
@@ -361,4 +374,70 @@ svg:hover {
     color: #999;
     font-family: "Noto Sans",Sans-Serif;
     font-size: 14px;
+}
+
+/* CHESS TV */
+.chess-tv {
+    padding: 0 0 0 2vw;
+}
+
+.chess-tv a{
+    text-decoration: none;
+    color: #999;
+    font-family: "Noto Sans",Sans-Serif;
+    margin-right: 1.2em;
+}
+
+.chess-tv > div > a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.social-media {
+    margin-top: 2em;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* BLOGS - RANKINGS */
+
+
+/* DAILY PUZZLE */
+.chess-daily-puzzle {
+    display: flex;
+    flex-flow: column;
+    gap: 2vmin;
+    padding: 0 2vw 0 0;
+}
+
+.chess-daily-puzzle a {
+    background: #262421;
+    font-size: 1.3em;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #bf811d;
+    font-family: "Noto Sans",Sans-Serif;
+    font-weight: normal;
+    font-size: 1.3em;
+    padding: 0.2em 0.5em;
+}
+
+.chess-daily-puzzle span {
+    display: block;
+}
+
+.text-sm {
+    font-size: .8em;
+}
+
+.chess-daily-puzzle a:hover {
+    color: white;
+    background: #bf811d;
+}
+
+.chess-daily-puzzle a:hover svg {
+    stroke: white;
 }

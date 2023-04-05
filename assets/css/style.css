@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #161512 linear-gradient(to bottom, hsl(37, 12%, 16%), hsl(37, 10%, 8%) 116px) repeat-x;
+    background: #161512 linear-gradient(to bottom, #2d2923, #161412 116px) repeat-x;
     height: 100vh;
 }
 
@@ -22,7 +22,7 @@ header {
     display: flex;
     height: 100%;
     font-family: 'Noto Sans', sans-serif;
-    color: #BABABA;
+    color: #bababa;
 }
 
 .title {
@@ -35,11 +35,11 @@ header {
 
 .title a {
     text-decoration: none;
-    color: #BABABA;
+    color: #bababa;
 }
 
 .title span {
-    color: #999999;
+    color: #999;
 }
 
 .title:hover a,
@@ -78,7 +78,7 @@ header {
 
 .main-nav ul li a {
     text-decoration: none;
-    color: #999999;
+    color: #999;
 }
 
 .main-nav .submenu {
@@ -100,7 +100,7 @@ header {
 }
 
 .main-nav > ul > li:hover > a{
-    color: white;
+    color: #fff;
 }
 
 .main-nav ul li:hover .submenu {
@@ -112,7 +112,7 @@ header {
 }
 
 .submenu li:hover a{
-    color: white;
+    color: #fff;
 }
 
 
@@ -132,7 +132,7 @@ header {
 .nav-right a:hover {
     border-radius: 3px;
     background: #4d4d4d66;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 23%);;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 23%);
 }
 
 svg {
@@ -141,7 +141,7 @@ svg {
 }
 
 svg:hover {
-    stroke: white;
+    stroke: #fff;
 }
 
 /* Cuerpo de la pagina */
@@ -213,7 +213,7 @@ svg:hover {
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
-    color: #BABABA;
+    color: #bababa;
     padding: .3em;
     opacity: .8;
     align-items: center;
@@ -225,7 +225,7 @@ svg:hover {
 }
 
 .spotlights a:hover svg {
-    color: white;
+    color: #fff;
 }
 
 .spotlights a:hover span {
@@ -233,7 +233,7 @@ svg:hover {
 }
 
 .about {
-    color: #BABABA;
+    color: #bababa;
     font-family: "Noto Sans",Sans-Serif;
     font-size: 14px;
     margin-top: 2vmin;
@@ -261,7 +261,7 @@ svg:hover {
     justify-content: space-around;
     user-select: none;
     cursor: pointer;
-    color: #999999;
+    color: #999;
 }
 
 .pestañas span {
@@ -359,7 +359,7 @@ svg:hover {
 
 .opciones-partida button:hover {
     opacity: 0.95;
-    color: white;
+    color: #fff;
 }
 
 .contadores {
@@ -479,12 +479,12 @@ svg:hover {
 }
 
 .chess-daily-puzzle a:hover {
-    color: white;
+    color: #fff;
     background: #bf811d;
 }
 
 .chess-daily-puzzle a:hover svg {
-    stroke: white;
+    stroke: #fff;
 }
 
 
@@ -529,10 +529,11 @@ svg:hover {
     padding: 0.6em 1em;
     border-radius: 3px;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 .login form input:focus {
-    border-color: white;
+    border-color: #fff;
 }
 
 .login form button {

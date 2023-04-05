@@ -1,3 +1,12 @@
+## Vista Previa
+### Index
+![Primera Vista previda del Index](https://i.postimg.cc/pd1GjcH0/index-preview.png)
+![Segunda Vista previa del Index](https://i.postimg.cc/XJRsHZXd/index-preview-2.png)
+
+### Login
+![Vista previa del Login](https://i.postimg.cc/632HfV6B/login-preview.png)
+
+
 ## Lo que me gusto mas: 
 Me gusto como iba haciendo uso de los selectores de CSS, ya que encontraba multiples formas de seleccionar algo.
 

@@ -2,7 +2,7 @@
 Me gusto como iba haciendo uso de los selectores de CSS, ya que encontraba multiples formas de seleccionar algo.
 
 ## Lo que me gusto menos:
-Implementar los dropsdown de la barra de nav
+Implementar los dropsdown de la barra de navegacion
 
 ## Lo que se me facilito:
 El uso de Flexbox

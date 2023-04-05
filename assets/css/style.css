@@ -377,6 +377,10 @@ svg:hover {
     font-size: 14px;
 }
 
+.contadores a:hover {
+    color: #3692e7;
+}
+
 /* CHESS TV */
 .chess-tv {
     padding: 0 0 0 1vw;

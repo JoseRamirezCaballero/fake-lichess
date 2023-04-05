@@ -90,8 +90,25 @@
              <a href="#">INICIAR SESIÓN</a>
         </div>
     </header>
-    <main class="main-content">
-        
+    <main class="main-content-login">
+        <div class="login">
+            <h1>Iniciar sesión</h1>
+            <form action="">
+                <label for="user-input">Nombre de usuario o correo</label>
+                <input type="text" id="user-input" name="user">
+                <label for="password-input">Contraseña</label>
+                <input type="text" id="password-input" name="password">
+                <button type="submit">INICIAR SESIÓN</button>
+                <label for="remindme-input">
+                    <input type="checkbox" name="remindme" id="remindme-input"> Recuérdame
+                </label>
+            </form>
+            <div class="opciones-login">
+                <a href="#">Registrarse</a>
+                <a href="#">Cambiar contraseña</a>
+                <a href="#">Log in by email</a>
+            </div>
+        </div>
     </main>
     <script src="assets/js/main.js"></script>
 </body>

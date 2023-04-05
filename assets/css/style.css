@@ -486,3 +486,80 @@ svg:hover {
 .chess-daily-puzzle a:hover svg {
     stroke: white;
 }
+
+
+.main-content-login {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    background: #262421;
+    width: 300px;
+    border-radius: 3px;
+    padding: 5vh 60px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login h1 {
+    font-family: "Roboto",Sans-Serif;
+    font-size: 40px;
+    color: #bababa;
+    font-weight: normal;
+}
+
+.login form label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    cursor: text;
+    font-family: "Roboto",Sans-Serif;
+    color: #bababa;
+}
+
+.login form input {
+    border: 1px solid #c33;
+    background: #24221e;
+    padding: 0.6em 1em;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.login form input:focus {
+    border-color: white;
+}
+
+.login form button {
+    background: #3692e7;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-family: "Roboto",Sans-Serif;
+    font-weight: 600;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 23%);
+    border-radius: 3px;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1em;
+}
+
+.opciones-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: .9em;
+    line-height: 2em;
+    gap: 1em;
+}
+
+.opciones-login a {
+    color: #3692e7;
+    text-decoration: none;
+}

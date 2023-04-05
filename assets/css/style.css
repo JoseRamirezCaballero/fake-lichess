@@ -137,6 +137,7 @@ header {
 
 svg {
     padding: 0 0.7rem;
+    cursor: pointer;
 }
 
 svg:hover {
@@ -329,7 +330,7 @@ svg:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2em 0 0 0;
+    margin: 2em 2em 0 0;
     gap: 0.5em;
     position: relative;
 }
@@ -378,7 +379,7 @@ svg:hover {
 
 /* CHESS TV */
 .chess-tv {
-    padding: 0 0 0 2vw;
+    padding: 0 0 0 1vw;
 }
 
 .chess-tv a{
@@ -400,14 +401,54 @@ svg:hover {
 }
 
 /* BLOGS - RANKINGS */
+.blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.blogs article {
+    display: flex;
+    width: 605px;
+}
+  
+.blogs article a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    background: #302e2c;
+    font-size: 8px;
+    color: #ccc;
+}
+
+.blogs h2 {
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.blogs article a:nth-child(2) {
+    margin: 0 10px;
+}
+
+.blogs article a span {
+    padding: 0 15px;
+}
+
+  
+.blogs article img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
 
 /* DAILY PUZZLE */
 .chess-daily-puzzle {
     display: flex;
     flex-flow: column;
     gap: 2vmin;
-    padding: 0 2vw 0 0;
+    padding: 0 1vw 0 0;
 }
 
 .chess-daily-puzzle a {
